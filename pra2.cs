@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _24SOECE213014_AMRITA
+namespace _24SOECE13014_AMRITA
 {
     internal class pra2
     {
