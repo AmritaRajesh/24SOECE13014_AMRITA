@@ -15,21 +15,17 @@ namespace _24SOECE213014_AMRITA
         static void Main(string[] args)
         {
             Console.Write("Enter your mobile number: ");
-            string mobileNumber = Console.ReadLine();
-            if (mobileNumber.Length >= 5)
+            string str = Console.ReadLine();
+            string[] myArray = new string[str.Length];
+            for (int i = 0; i < str.Length; i++)
             {
-                string maskedNumber = MaskLastFiveDigits(mobileNumber);
-                Console.WriteLine($"Masked Mobile Number: {maskedNumber}");
+                myArray[i] = str[i].ToString();
+                if (i >= 5)
+                {
+                    myArray[i] = "X";
+                }
             }
-            else
-            {
-                Console.WriteLine("Mobile number must be at least 5 digits long.");
-            }
-            Console.ReadLine();
-        }
-        static string MaskLastFiveDigits(string number)
-        {
-            return number.Substring(0, number.Length - 5) + "XXXXX";
+            Console.WriteLine(string.Join("", myArray));
         }
     }
 }

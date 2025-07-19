@@ -10,33 +10,19 @@ namespace _24SOECE213014_AMRITA
 {
     internal class pra15
     {
-        public static void Main(string[]args) 
+        public static void Main(string[] args)
         {
-            Console.Write("Enter a number:");
-            string input = Console.ReadLine();
-            if (string.IsNullOrEmpty(input) || !input.All(char.IsDigit))
-            {
-                Console.WriteLine("Invalid input. Please enter a valid number.");
-                return;
-            }
-            int number = int.Parse(input);
-            int originalNumber = number;
-            int sum = 0;
-            int digitsCount = input.Length;
+            int number = 0, len = 0, sum = 0, clone;
+            Console.Write("Enter a number: ");
+            clone = number = Convert.ToInt32(Console.ReadLine());
+            len = number.ToString().Length;
+
             while (number > 0)
             {
-                int digit = number % 10;
-                sum += (int)Math.Pow(digit, digitsCount);
+                sum += Convert.ToInt32(Math.Pow((number % 10), len));
                 number /= 10;
             }
-            if (sum == originalNumber)
-            {
-                Console.WriteLine($"{originalNumber} is an Armstrong number.");
-            }
-            else
-            {
-                Console.WriteLine($"{originalNumber} is not an Armstrong number.");
-            }
+            Console.WriteLine($"{clone} is{(clone == sum ? "" : " not")} armstrong ");
         }
     }
 }

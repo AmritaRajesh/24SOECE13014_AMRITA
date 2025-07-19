@@ -30,25 +30,13 @@ namespace _24SOECE213014_AMRITA
     {
         public static void Main(string[] args)
         {
-            Console.Write("Enter the number of rows for the diamond (half):");
-            if (int.TryParse(Console.ReadLine(), out int rows) && rows > 0)
+            int n = 5;
+            for (int i = 1; i <= 2 * n - 1; i++)
             {
-                // Upper part of the diamond
-                for (int i = 1; i <= rows; i++)
-                {
-                    Console.Write(new string(' ', rows - i));
-                    Console.WriteLine(new string('*', 2 * i - 1));
-                }
-                // Lower part of the diamond
-                for (int i = rows - 1; i >= 1; i--)
-                {
-                    Console.Write(new string(' ', rows - i));
-                    Console.WriteLine(new string('*', 2 * i - 1));
-                }
-            }
-            else
-            {
-                Console.WriteLine("Please enter a valid positive integer.");
+                int spaces = Math.Abs(n - i);
+                int stars = 2 * (n - spaces) - 1;
+                Console.Write(new string(' ', spaces));
+                Console.WriteLine(new string('*', stars));
             }
         }
     }

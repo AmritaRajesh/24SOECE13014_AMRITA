@@ -20,26 +20,21 @@ namespace _24SOECE213014_AMRITA
     {
         public static void Main(string[]args)
         {
-            Console.Write("Enter the number of rows for the pyramid:");
-            if (int.TryParse(Console.ReadLine(), out int rows) && rows > 0)
+            int m = 3;
+            int a = 1;
+            for (int i = 1; i < 5; i++)
             {
-                int number = 1;
-                for (int i = 1; i <= rows; i++)
+                for (int j = m; j >= 1; j--)
                 {
-                    // Print leading spaces
-                    Console.Write(new string(' ', rows - i));
-                    // Print numbers
-                    for (int j = 1; j <= i; j++)
-                    {
-                        Console.Write(number + " ");
-                        number++;
-                    }
-                    Console.WriteLine();
+                    System.Console.Write(" ");
                 }
-            }
-            else
-            {
-                Console.WriteLine("Please enter a valid positive integer.");
+                m--;
+                for (int j = 1; j <= i; j++)
+                {
+                    System.Console.Write(a + " ");
+                    a++;
+                }
+                System.Console.WriteLine();
             }
         }
     }

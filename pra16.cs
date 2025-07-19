@@ -22,18 +22,15 @@ namespace _24SOECE213014_AMRITA
     {
         public static void Main(string[] args)
         {
-            Console.Write("Enter the number of rows for the triangle:");
-            if (int.TryParse(Console.ReadLine(), out int rows) && rows > 0)
+            for (int i = 1; i <= 5; i++)
             {
-                for (int i = 1; i <= rows; i++)
+                for (int j = 1; j <= i; j++)
                 {
-                    Console.WriteLine(new string('*', i));
+                    System.Console.Write('*');
                 }
-            }
-            else
-            {
-                Console.WriteLine("Please enter a valid positive integer.");
+                System.Console.WriteLine();
             }
         }
+
     }
 }

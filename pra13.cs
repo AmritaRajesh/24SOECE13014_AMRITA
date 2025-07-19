@@ -13,16 +13,12 @@ namespace _24SOECE213014_AMRITA
     {
         public static void Main(string[] args)
         {
-            int n = 11; // Number of terms in the Fibonacci series
-            int a = 0, b = 1, c;
             Console.Write("Fibonacci Series: ");
-            Console.Write(a + " " + b + " ");
-            for (int i = 2; i < n; i++)
+            int a = 0, b = 1;
+            Console.Write($"{a} {b} ");
+            while (b != 55)
             {
-                c = a + b;
-                Console.Write(c + " ");
-                a = b;
-                b = c;
+                Console.Write($"{b = a + (a = b)} ");
             }
             Console.WriteLine();
         }

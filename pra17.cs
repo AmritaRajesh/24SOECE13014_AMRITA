@@ -20,19 +20,13 @@ namespace _24SOECE213014_AMRITA
     {
         public static void Main(string[] args)
         {
-            Console.Write("Enter the number of rows:");
-            if (!int.TryParse(Console.ReadLine(), out int rows) || rows <= 0)
-            {
-                Console.WriteLine("Invalid input. Please enter a positive integer.");
-                return;
-            }
-            for (int i = 1; i <= rows; i++)
+            for (int i = 1; i < 5; i++)
             {
                 for (int j = 1; j <= i; j++)
                 {
-                    Console.Write(j + " ");
+                    System.Console.Write(j + " ");
                 }
-                Console.WriteLine();
+                System.Console.WriteLine();
             }
         }
     }
