@@ -1,6 +1,5 @@
-﻿//2. Write a program of sorting an array.
-//Declare single dimensional array and accept 5 integer values from the user.
-//Then sort the input in ascending order and display output.
+﻿//2. Write a program of sorting an array.Declare single dimensional array and accept 5 integer
+//values from the user.Then sort the input in ascending order and display output.
 
 using System;
 using System.Collections.Generic;
