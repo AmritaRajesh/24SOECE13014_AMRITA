@@ -1,4 +1,8 @@
-﻿using System;
+﻿//6 : Complete the following code that will generate the given output:
+
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

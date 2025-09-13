@@ -1,4 +1,6 @@
-﻿using System;
+﻿//5 : Rearrange the given code to get the desired output.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
