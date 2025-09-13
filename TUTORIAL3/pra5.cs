@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace _24SOECE213014_AMRITA.TUTORIAL3
 {
-    internal class Product
+    internal class pra5
     {
         int pcode;
         String pname, mname;
 
-        public Product(int pcd, String pnm, String mnm)
+        public pra5(int pcd, String pnm, String mnm)
         {
             pcode = pcd;
             pname = pnm;
@@ -42,7 +42,7 @@ namespace _24SOECE213014_AMRITA.TUTORIAL3
                 String pnm = args[1];
                 String mnm = args[2];
 
-                Product p = new Product(pcd, pnm, mnm);
+                pra5 p = new pra5(pcd, pnm, mnm);
                 p.Display();
 
                 Console.Read();
