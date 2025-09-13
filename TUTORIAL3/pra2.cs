@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace _24SOECE213014_AMRITA.TUTORIAL3
 {
-    internal class Clock
+    internal class pra2
     {
         private int hour, min, sec;
 
-        public Clock()
+        public pra2()
         {
             hour = 12; min = 0; sec = 0;
         }
 
-        public Clock(int h, int m, int s)
+        public pra2(int h, int m, int s)
         {
             hour = h; min = m; sec = s;
         }
@@ -42,8 +42,8 @@ namespace _24SOECE213014_AMRITA.TUTORIAL3
     {
         static void Main()
         {
-            Clock c1 = new Clock();
-            Clock c2 = new Clock(10, 59, 58);
+            pra2 c1 = new pra2();
+            pra2 c2 = new pra2(10, 59, 58);
 
             c1.Display();
             c2.Display();

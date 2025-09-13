@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace _24SOECE213014_AMRITA.TUTORIAL3
 {
-    internal class Car
+    internal class pra1
     {
         private string brand;
         private string model;
         private int price;
 
-        public Car(string b, string m, int p)
+        public pra1(string b, string m, int p)
         {
             brand = b;
             model = m;
@@ -37,8 +37,8 @@ namespace _24SOECE213014_AMRITA.TUTORIAL3
     {
         public static void Main(string[] args)
         {
-            Car car1 = new Car("BMW", "X5", 7500000);
-            Car car2 = new Car("Tesla", "Model S", 8500000);
+            pra1 car1 = new pra1("BMW", "X5", 7500000);
+            pra1 car2 = new pra1("Tesla", "Model S", 8500000);
 
             Console.WriteLine("\nCar 1 Info:");
             car1.DisplayInfo();
