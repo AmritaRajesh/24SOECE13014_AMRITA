@@ -1,4 +1,14 @@
-﻿using System;
+﻿/* 2 : Define a class Clock with three private integer data members hour, min and sec. 
+Define a no argument constructor to initialize time value to 12:00:00. 
+Define a three argument constructor to initialize the time.Define a methods to
+
+Increment time to next second.
+Display the time value.
+Return the hour (int getHour())
+Return the minute (int getMinute())
+Return the seconds (int getSeconds())*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
