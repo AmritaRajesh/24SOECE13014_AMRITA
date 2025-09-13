@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="TUTORIAL3\Student.cs.old" />
+  </ItemGroup>
+
 </Project>
