@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*3 : Define a Student class with appropriate data members, property, constructors, methos etc. 
+Define another class called TestStudent within the same .cs file. 
+Also create an object of student class and demonstrate the use of student class.*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
