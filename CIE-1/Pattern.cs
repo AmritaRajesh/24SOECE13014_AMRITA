@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _24SOECE213014_AMRITA
+namespace _24SOECE213014_AMRITA.CIE_1
 {
     internal class Pattern
     {
