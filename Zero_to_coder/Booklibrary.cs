@@ -13,6 +13,10 @@ public class Book
         Author = author;
         IsBorrowed = false;
     }
+
+    public Book()
+    {
+    }
 }
 
 public class Library
